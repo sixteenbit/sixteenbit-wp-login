@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+body {
+  background-color: #eef1f3;
+  color: #1f282e;
+  font-family: 'Roboto Mono', monospace; }
+
+.login h1 a {
+  background-image: url("../img/logo.png");
+  background-image: url("../img/logo.svg"); }
+
+.login #backtoblog a,
+.login #nav a {
+  color: #2c4a58; }
+
+.login #login_error,
+.login .message,
+.login .success {
+  border-color: #2c3840; }
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.login h1 a:hover {
+  color: #5a7384; }
+
+.wp-core-ui .button-secondary {
+  color: #2c3840; }
+
+.wp-core-ui .wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+  background-color: #2c3840;
+  border-color: #2c3840;
+  border-radius: 0;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s; }
+  .wp-core-ui .wp-core-ui .button-group.button-large .button:hover, .wp-core-ui .wp-core-ui .button-group.button-large .button:active, .wp-core-ui .wp-core-ui .button-group.button-large .button:focus,
+  .wp-core-ui .button.button-large:hover,
+  .wp-core-ui .button.button-large:active,
+  .wp-core-ui .button.button-large:focus {
+    background-color: #5a7384; }
+
+input[type="checkbox"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="datetime"]:focus, input[type="email"]:focus,
+input[type="month"]:focus, input[type="number"]:focus,
+input[type="password"]:focus, input[type="radio"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus,
+input[type="text"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, input[type="week"]:focus,
+select:focus, textarea:focus {
+  border-color: #2c3840; }
+
+/*# sourceMappingURL=login.css.map */

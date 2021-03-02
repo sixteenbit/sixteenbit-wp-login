@@ -1,0 +1,29 @@
+{
+	"name": "sixteenbit-wp-login",
+	"version": "0.1.0",
+	"description": "Custom login styles for WordPress.",
+	"author": "Sixteenbit",
+	"license": "GPL-2.0 AND MIT",
+	"devDependencies": {
+		"gulp": "4.0.2",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-imagemin": "^7.1.0",
+		"gulp-load-plugins": "^2.0.6",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-sass": "^4.1.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-util": "^3.0.8"
+	},
+	"scripts": {
+		"postinstall": "npm run build",
+		"build": "gulp",
+		"styles": "gulp styles",
+		"images": "gulp images",
+		"watch": "gulp watch"
+	},
+	"dependencies": {
+		"gulp-zip": "^5.0.2",
+		"rimraf": "^3.0.2"
+	}
+}

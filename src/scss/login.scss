@@ -1,0 +1,68 @@
+@import 'mixins';
+@import 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.login {
+  h1 {
+    a {
+      background-image: url('../img/logo.png');
+      background-image: url('../img/logo.svg');
+    }
+  }
+
+  #backtoblog a,
+  #nav a {
+    color: $anchor-color;
+  }
+
+  #login_error,
+  .message,
+  .success {
+    border-color: $primary-color;
+  }
+
+  #backtoblog a:hover,
+  #nav a:hover,
+  h1 a:hover {
+    color: $secondary-color;
+  }
+}
+
+.wp-core-ui {
+  .button-secondary {
+    color: $primary-color;
+  }
+
+  .wp-core-ui .button-group.button-large .button,
+  .button.button-large {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    border-radius: 0;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+
+    @include on-event() {
+      background-color: $secondary-color;
+    }
+  }
+}
+
+input[type="checkbox"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="datetime"]:focus, input[type="email"]:focus,
+input[type="month"]:focus, input[type="number"]:focus,
+input[type="password"]:focus, input[type="radio"]:focus,
+input[type="search"]:focus, input[type="tel"]:focus,
+input[type="text"]:focus, input[type="time"]:focus,
+input[type="url"]:focus, input[type="week"]:focus,
+select:focus, textarea:focus {
+  border-color: $primary-color;
+}
